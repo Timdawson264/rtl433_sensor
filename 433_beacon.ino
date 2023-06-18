@@ -11,13 +11,13 @@ struct beacon {
 };
 beacon mesurements;
 
-RH_ASK driver(2000, 0, 10, 0);
+RH_ASK driver(2000, 0, 10, 11, false);
 MsgPack::Packer packer;
 
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(13, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
   driver.init();
   mesurements.id=123456789;
   mesurements.temp=987.65433;

@@ -68,7 +68,7 @@ def on_connect(client, userdata, flags, rc):
     # reconnect then subscriptions will be renewed.
     client.subscribe("rtl_433/+/devices/radiohead_msgpak/rows/+/data")
 
-
+#https://gist.github.com/oysstu/68072c44c02879a2abf94ef350d1c7c6
 def crc16(data: bytes, poly=0x8408):
     '''
     CRC-16-CCITT Algorithm
